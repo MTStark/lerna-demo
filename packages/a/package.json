@@ -1,0 +1,35 @@
+{
+  "name": "ls",
+  "version": "0.0.1-alpha",
+  "description": "test 1",
+  "keywords": [
+    "test"
+  ],
+  "author": "yu <mouxiaoyu@meituan.com>",
+  "homepage": "http://none",
+  "license": "MIT",
+  "main": "lib/a.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://r.npm.sankuai.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MTStark/lerna-demo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/MTStark/lerna-demo/issues"
+  },
+  "dependencies": {
+    "antd": "^4.15.5"
+  }
+}

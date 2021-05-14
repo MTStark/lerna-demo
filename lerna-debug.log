@@ -1,10 +1,15 @@
-0 silly argv { _: [ 'create' ], lernaVersion: '4.0.0', '$0': 'lerna', name: '1' }
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'lerna',
+0 silly argv   pkg: '@antd'
+0 silly argv }
 1 notice cli v4.0.0
 2 verbose rootPath /Users/yu/Work Project/lerna-demo
-3 error Error: Command failed with exit code 1: git config --get user.name
-3 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/lib/error.js:59:11)
-3 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:186:17)
-3 error     at Object.execSync (/usr/local/lib/node_modules/lerna/node_modules/@lerna/child-process/index.js:39:16)
-3 error     at CreateCommand.gitConfig (/usr/local/lib/node_modules/lerna/node_modules/@lerna/create/index.js:181:25)
-3 error     at CreateCommand.initialize (/usr/local/lib/node_modules/lerna/node_modules/@lerna/create/index.js:103:46)
-3 error     at /usr/local/lib/node_modules/lerna/node_modules/@lerna/command/index.js:274:24
+3 error Error: Invalid tag name "@antd": Tags may not have any characters that encodeURIComponent encodes.
+3 error     at invalidTagName (/Users/yu/Work Project/lerna-demo/node_modules/npm-package-arg/npa.js:94:15)
+3 error     at fromRegistry (/Users/yu/Work Project/lerna-demo/node_modules/npm-package-arg/npa.js:299:13)
+3 error     at resolve (/Users/yu/Work Project/lerna-demo/node_modules/npm-package-arg/npa.js:84:12)
+3 error     at npa (/Users/yu/Work Project/lerna-demo/node_modules/npm-package-arg/npa.js:55:10)
+3 error     at AddCommand.initialize (/Users/yu/Work Project/lerna-demo/node_modules/@lerna/add/index.js:39:17)
